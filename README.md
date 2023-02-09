@@ -1,2 +1,2 @@
 # website
-just a little website for myself
+https://musksticks.github.io/website/
