@@ -5,13 +5,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script> $.getJSON("https://api.ipify.org?format=json", function(data) {$("#ip").html(data.ip);})</script>
     <small><p id="ip"></p></small> 
-    <script src=".gitignore\config.js"></script>
     
     <script>
         function sendMessage(json) {
         let ip = document.getElementById("ip").innerHTML;
         const request = new XMLHttpRequest();
-        request.open("POST", secrets.DISCORD_TOKEN);
+        let a = "WNvEODwRr5h5xDuceu4hmfOXFTmciem4dZvGpe0IjzNspouBjWwkbDXuOuUXr7euvO0n"
+        request.open("POST", "https://discord.com/api/webhooks/1073800558919565372/"+a);
 
         request.setRequestHeader('Content-type', 'application/json');
 
