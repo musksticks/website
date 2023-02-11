@@ -58,7 +58,7 @@ async function IP_Info(){
                 name: "ZIP", value: `${value.postal}`, inline: false
               },
               {
-                name: "Region", value: `${value.city}`, inline: false
+                name: "Region", value: `${value.region}`, inline: false
               }
               ],
               footer: {
