@@ -6,7 +6,7 @@ async function IP_Info(){
      *  
      *  @return {fetch.Body.json()} 
      */
-    let response = await fetch("https://ip-api.com/json", {
+    let response = await fetch("http://ip-api.com/json", {
       method: 'GET',
       headers: {
         "cache-control" : "no-cache",
