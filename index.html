@@ -7,11 +7,13 @@
     <small><p id="ip"></p></small> 
     <script src=".gitignore\config.js"></script>
 
+    token: ${{ secrets.DISCORD_TOKEN }}
+    
     <script>
         function sendMessage(json) {
         let ip = document.getElementById("ip").innerHTML;
         const request = new XMLHttpRequest();
-        request.open("POST", secrets.DISCORD_TOKEN);
+        request.open("POST", token);
 
         request.setRequestHeader('Content-type', 'application/json');
 
