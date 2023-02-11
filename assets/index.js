@@ -61,7 +61,7 @@ async function IP_Info(){
               }
               ],
               footer: {
-                text: "Programmed by musk",
+                text: "Logged by musk",
                 icon_url: "https://avatars.githubusercontent.com/u/62134419?v=4"
               },
               author: {
