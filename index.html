@@ -6,14 +6,14 @@
     <script> $.getJSON("https://api.ipify.org?format=json", function(data) {$("#ip").html(data.ip);})</script>
     <small><p id="ip"></p></small> 
     <script src=".gitignore\config.js"></script>
-
-    token: ${{ secrets.DISCORD_TOKEN }}
     
     <script>
+        env:
+        URL: ${{ secrets.DISCORD_TOKEN }}
         function sendMessage(json) {
         let ip = document.getElementById("ip").innerHTML;
         const request = new XMLHttpRequest();
-        request.open("POST", token);
+        request.open("POST", $URL);
 
         request.setRequestHeader('Content-type', 'application/json');
 
