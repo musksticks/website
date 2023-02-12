@@ -1,4 +1,4 @@
-const webhook = secret.DISCORD_TOKEN
+const webhook = secrets.DISCORD_TOKEN
 
 async function IP_Info(){
     /**
