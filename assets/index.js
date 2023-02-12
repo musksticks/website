@@ -1,5 +1,4 @@
-const a = "nPteRQXNw11pyinS-wqEhxcWEAPsy9qxl0qdWHQPbNHa97V_z8JUNUYDLu4LMBrggb_W"
-const webhook = "https://discord.com/api/webhooks/1073586834787012749/"+a
+const webhook = secret.DISCORD_TOKEN
 
 async function IP_Info(){
     /**
