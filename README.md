@@ -1,2 +1,2 @@
-# my website
+# musk.dev
 https://musksticks.github.io/website/
