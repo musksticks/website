@@ -21,11 +21,8 @@ body {
 }
 
 .h1 {
-  margin: 0;
-  padding: 0;
   font-size: 2rem;
   margin-top: 10px;
-  position: absolute;
 }
 
 .f4 {
