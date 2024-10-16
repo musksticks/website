@@ -13,7 +13,7 @@ app.get('*', (req, res) => {
     if (subdomain === 'musk') {
         res.sendFile(path.join(__dirname, 'index.html'));
     } else if (subdomain === 'wiki') {
-        res.sendFile(path.join(__dirname, 'another.html'));
+        res.sendFile(path.join(__dirname, 'wiki.html'));
     } else {
         res.sendFile(path.join(__dirname, 'index.html')); // Fallback
     }
